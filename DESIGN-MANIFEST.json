@@ -1,0 +1,772 @@
+{
+  "schema": "open-design.design-manifest.v1",
+  "title": "9255573a-41d3-43ea-b15b-0e6cd935b377",
+  "entryFile": "index.html",
+  "sourceFiles": {
+    "all": [
+      "about.html",
+      "ai-powered-marketing.html",
+      "articles.html",
+      "articles/agentic-commerce.html",
+      "articles/ai-agents-one-person-business.html",
+      "articles/ai-automation-what-worked.html",
+      "articles/ai-changing-real-estate.html",
+      "articles/ai-workflows-hospitality-marketing.html",
+      "articles/analyse-dubai-property-ai.html",
+      "articles/build-digital-product-ai.html",
+      "articles/dubai-real-estate-tokenization.html",
+      "articles/future-search-marketing-hospitality.html",
+      "articles/google-knowledge-graph-hospitality.html",
+      "articles/local-ai-vs-cloud-ai.html",
+      "articles/luxury-hotel-content-strategy.html",
+      "articles/multi-page-website-aed-40.html",
+      "articles/off-plan-vs-ready-property-dubai.html",
+      "articles/search-visible-personal-brand.html",
+      "articles/why-ai-automation-fails.html",
+      "assets/alisher-yakubov.jpg",
+      "assets/articles/agentic-commerce.jpg",
+      "assets/articles/ai-agents-one-person-business.jpg",
+      "assets/articles/ai-automation-what-worked.jpg",
+      "assets/articles/ai-changing-real-estate.jpg",
+      "assets/articles/analyse-dubai-property-ai.jpg",
+      "assets/articles/build-digital-product-ai.jpg",
+      "assets/articles/dubai-real-estate-tokenization.jpg",
+      "assets/articles/off-plan-vs-ready-property.jpg",
+      "assets/articles/why-ai-automation-fails.jpg",
+      "assets/book-preview/page-01.jpg",
+      "assets/book-preview/page-01.png",
+      "assets/book-preview/page-02.jpg",
+      "assets/book-preview/page-02.png",
+      "assets/book-preview/page-03.jpg",
+      "assets/book-preview/page-03.png",
+      "assets/book-preview/page-04.jpg",
+      "assets/book-preview/page-04.png",
+      "assets/book-preview/page-05.jpg",
+      "assets/book-preview/page-05.png",
+      "assets/book-preview/page-06.jpg",
+      "assets/book-preview/page-06.png",
+      "assets/book-preview/page-07.jpg",
+      "assets/book-preview/page-07.png",
+      "assets/book-preview/page-08.jpg",
+      "assets/book-preview/page-08.png",
+      "assets/book-preview/page-09.jpg",
+      "assets/book-preview/page-09.png",
+      "assets/book-preview/page-10.jpg",
+      "assets/book-preview/page-10.png",
+      "assets/book-preview/page-11.jpg",
+      "assets/book-preview/page-11.png",
+      "assets/book-preview/page-12.jpg",
+      "assets/book-preview/page-12.png",
+      "assets/book-preview/page-13.jpg",
+      "assets/book-preview/page-13.png",
+      "assets/book-preview/page-14.jpg",
+      "assets/book-preview/page-14.png",
+      "assets/book-preview/page-15.jpg",
+      "assets/book-preview/page-15.png",
+      "assets/book-preview/page-16.jpg",
+      "assets/book-preview/page-16.png",
+      "assets/book-preview/page-17.jpg",
+      "assets/book-preview/page-18.jpg",
+      "assets/book-preview/page-19.jpg",
+      "assets/book-preview/page-20.jpg",
+      "assets/book-preview/page-21.jpg",
+      "assets/book-preview/page-22.jpg",
+      "assets/book-preview/page-23.jpg",
+      "assets/book-preview/page-24.jpg",
+      "assets/book-preview/page-25.jpg",
+      "assets/book-preview/page-26.jpg",
+      "assets/book-preview/page-27.jpg",
+      "assets/book-preview/page-28.jpg",
+      "assets/book-preview/page-29.jpg",
+      "assets/book-preview/page-30.jpg",
+      "assets/book-preview/page-31.jpg",
+      "assets/book-preview/page-32.jpg",
+      "assets/book-preview/page-33.jpg",
+      "assets/book-preview/page-34.jpg",
+      "assets/book-preview/page-35.jpg",
+      "assets/book-preview/page-36.jpg",
+      "assets/book-preview/page-37.jpg",
+      "assets/book-preview/page-38.jpg",
+      "assets/book-preview/page-39.jpg",
+      "assets/book-preview/page-40.jpg",
+      "assets/book-preview/page-41.jpg",
+      "assets/book-preview/page-42.jpg",
+      "assets/book-preview/page-43.jpg",
+      "assets/book-preview/page-44.jpg",
+      "assets/book-preview/page-45.jpg",
+      "assets/book-preview/page-46.jpg",
+      "assets/book-preview/page-47.jpg",
+      "assets/favicon.svg",
+      "assets/insights/search-is-not-dead.jpg",
+      "assets/lib/jquery.min.js",
+      "assets/lib/turn.js",
+      "assets/og-about.jpg",
+      "assets/og-articles.jpg",
+      "assets/og-contact.jpg",
+      "assets/og-gallery.jpg",
+      "assets/og-home.jpg",
+      "assets/og-media.jpg",
+      "assets/og-projects.jpg",
+      "assets/og-work.jpg",
+      "book-preview.html",
+      "books.html",
+      "colors_and_type.css",
+      "contact.html",
+      "context/provenance.md",
+      "context/source-context.md",
+      "custom-books.html",
+      "DESIGN.md",
+      "experience.html",
+      "gallery.html",
+      "hospitality-campaigns.html",
+      "index.html",
+      "insights/search-is-not-dead-hotel-marketing.html",
+      "news.html",
+      "photography-for-brands.html",
+      "preview/applied-ui.html",
+      "preview/brand-assets.html",
+      "preview/colors-primary.html",
+      "preview/colors.html",
+      "preview/components-buttons.html",
+      "preview/components.html",
+      "preview/index.html",
+      "preview/radius-shadows.html",
+      "preview/spacing-tokens.html",
+      "preview/spacing.html",
+      "preview/typography-specimens.html",
+      "preview/typography.html",
+      "projects.html",
+      "README.md",
+      "robots.txt",
+      "search-index.json",
+      "search.js",
+      "sitemap.xml",
+      "SKILL.md",
+      "styles.css",
+      "theme.js",
+      "ui_kits/app/blog-card.html",
+      "ui_kits/app/buttons.html",
+      "ui_kits/app/card-grid.html",
+      "ui_kits/app/cta-section.html",
+      "ui_kits/app/expertise-card.html",
+      "ui_kits/app/footer.html",
+      "ui_kits/app/gallery.html",
+      "ui_kits/app/header.html",
+      "ui_kits/app/hero.html",
+      "ui_kits/app/index.html",
+      "ui_kits/app/news-feed.html",
+      "ui_kits/app/README.md",
+      "ui_kits/app/search-overlay.html",
+      "ui_kits/app/section-split.html",
+      "ui_kits/app/tags.html",
+      "vercel.json",
+      "video-content.html"
+    ],
+    "html": [
+      "about.html",
+      "ai-powered-marketing.html",
+      "articles.html",
+      "articles/agentic-commerce.html",
+      "articles/ai-agents-one-person-business.html",
+      "articles/ai-automation-what-worked.html",
+      "articles/ai-changing-real-estate.html",
+      "articles/ai-workflows-hospitality-marketing.html",
+      "articles/analyse-dubai-property-ai.html",
+      "articles/build-digital-product-ai.html",
+      "articles/dubai-real-estate-tokenization.html",
+      "articles/future-search-marketing-hospitality.html",
+      "articles/google-knowledge-graph-hospitality.html",
+      "articles/local-ai-vs-cloud-ai.html",
+      "articles/luxury-hotel-content-strategy.html",
+      "articles/multi-page-website-aed-40.html",
+      "articles/off-plan-vs-ready-property-dubai.html",
+      "articles/search-visible-personal-brand.html",
+      "articles/why-ai-automation-fails.html",
+      "book-preview.html",
+      "books.html",
+      "contact.html",
+      "custom-books.html",
+      "experience.html",
+      "gallery.html",
+      "hospitality-campaigns.html",
+      "index.html",
+      "insights/search-is-not-dead-hotel-marketing.html",
+      "news.html",
+      "photography-for-brands.html",
+      "preview/applied-ui.html",
+      "preview/brand-assets.html",
+      "preview/colors-primary.html",
+      "preview/colors.html",
+      "preview/components-buttons.html",
+      "preview/components.html",
+      "preview/index.html",
+      "preview/radius-shadows.html",
+      "preview/spacing-tokens.html",
+      "preview/spacing.html",
+      "preview/typography-specimens.html",
+      "preview/typography.html",
+      "projects.html",
+      "ui_kits/app/blog-card.html",
+      "ui_kits/app/buttons.html",
+      "ui_kits/app/card-grid.html",
+      "ui_kits/app/cta-section.html",
+      "ui_kits/app/expertise-card.html",
+      "ui_kits/app/footer.html",
+      "ui_kits/app/gallery.html",
+      "ui_kits/app/header.html",
+      "ui_kits/app/hero.html",
+      "ui_kits/app/index.html",
+      "ui_kits/app/news-feed.html",
+      "ui_kits/app/search-overlay.html",
+      "ui_kits/app/section-split.html",
+      "ui_kits/app/tags.html",
+      "video-content.html"
+    ],
+    "css": [
+      "colors_and_type.css",
+      "styles.css"
+    ],
+    "scriptsAndComponents": [
+      "assets/lib/jquery.min.js",
+      "assets/lib/turn.js",
+      "search.js",
+      "theme.js"
+    ],
+    "assets": [
+      "assets/alisher-yakubov.jpg",
+      "assets/articles/agentic-commerce.jpg",
+      "assets/articles/ai-agents-one-person-business.jpg",
+      "assets/articles/ai-automation-what-worked.jpg",
+      "assets/articles/ai-changing-real-estate.jpg",
+      "assets/articles/analyse-dubai-property-ai.jpg",
+      "assets/articles/build-digital-product-ai.jpg",
+      "assets/articles/dubai-real-estate-tokenization.jpg",
+      "assets/articles/off-plan-vs-ready-property.jpg",
+      "assets/articles/why-ai-automation-fails.jpg",
+      "assets/book-preview/page-01.jpg",
+      "assets/book-preview/page-01.png",
+      "assets/book-preview/page-02.jpg",
+      "assets/book-preview/page-02.png",
+      "assets/book-preview/page-03.jpg",
+      "assets/book-preview/page-03.png",
+      "assets/book-preview/page-04.jpg",
+      "assets/book-preview/page-04.png",
+      "assets/book-preview/page-05.jpg",
+      "assets/book-preview/page-05.png",
+      "assets/book-preview/page-06.jpg",
+      "assets/book-preview/page-06.png",
+      "assets/book-preview/page-07.jpg",
+      "assets/book-preview/page-07.png",
+      "assets/book-preview/page-08.jpg",
+      "assets/book-preview/page-08.png",
+      "assets/book-preview/page-09.jpg",
+      "assets/book-preview/page-09.png",
+      "assets/book-preview/page-10.jpg",
+      "assets/book-preview/page-10.png",
+      "assets/book-preview/page-11.jpg",
+      "assets/book-preview/page-11.png",
+      "assets/book-preview/page-12.jpg",
+      "assets/book-preview/page-12.png",
+      "assets/book-preview/page-13.jpg",
+      "assets/book-preview/page-13.png",
+      "assets/book-preview/page-14.jpg",
+      "assets/book-preview/page-14.png",
+      "assets/book-preview/page-15.jpg",
+      "assets/book-preview/page-15.png",
+      "assets/book-preview/page-16.jpg",
+      "assets/book-preview/page-16.png",
+      "assets/book-preview/page-17.jpg",
+      "assets/book-preview/page-18.jpg",
+      "assets/book-preview/page-19.jpg",
+      "assets/book-preview/page-20.jpg",
+      "assets/book-preview/page-21.jpg",
+      "assets/book-preview/page-22.jpg",
+      "assets/book-preview/page-23.jpg",
+      "assets/book-preview/page-24.jpg",
+      "assets/book-preview/page-25.jpg",
+      "assets/book-preview/page-26.jpg",
+      "assets/book-preview/page-27.jpg",
+      "assets/book-preview/page-28.jpg",
+      "assets/book-preview/page-29.jpg",
+      "assets/book-preview/page-30.jpg",
+      "assets/book-preview/page-31.jpg",
+      "assets/book-preview/page-32.jpg",
+      "assets/book-preview/page-33.jpg",
+      "assets/book-preview/page-34.jpg",
+      "assets/book-preview/page-35.jpg",
+      "assets/book-preview/page-36.jpg",
+      "assets/book-preview/page-37.jpg",
+      "assets/book-preview/page-38.jpg",
+      "assets/book-preview/page-39.jpg",
+      "assets/book-preview/page-40.jpg",
+      "assets/book-preview/page-41.jpg",
+      "assets/book-preview/page-42.jpg",
+      "assets/book-preview/page-43.jpg",
+      "assets/book-preview/page-44.jpg",
+      "assets/book-preview/page-45.jpg",
+      "assets/book-preview/page-46.jpg",
+      "assets/book-preview/page-47.jpg",
+      "assets/favicon.svg",
+      "assets/insights/search-is-not-dead.jpg",
+      "assets/og-about.jpg",
+      "assets/og-articles.jpg",
+      "assets/og-contact.jpg",
+      "assets/og-gallery.jpg",
+      "assets/og-home.jpg",
+      "assets/og-media.jpg",
+      "assets/og-projects.jpg",
+      "assets/og-work.jpg",
+      "context/provenance.md",
+      "context/source-context.md",
+      "DESIGN.md",
+      "README.md",
+      "robots.txt",
+      "search-index.json",
+      "sitemap.xml",
+      "SKILL.md",
+      "ui_kits/app/README.md",
+      "vercel.json"
+    ]
+  },
+  "screens": [
+    {
+      "file": "about.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ai-powered-marketing.html",
+      "role": "landing-page",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/agentic-commerce.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/ai-agents-one-person-business.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/ai-automation-what-worked.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/ai-changing-real-estate.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/ai-workflows-hospitality-marketing.html",
+      "role": "landing-page",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/analyse-dubai-property-ai.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/build-digital-product-ai.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/dubai-real-estate-tokenization.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/future-search-marketing-hospitality.html",
+      "role": "landing-page",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/google-knowledge-graph-hospitality.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/local-ai-vs-cloud-ai.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/luxury-hotel-content-strategy.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/multi-page-website-aed-40.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/off-plan-vs-ready-property-dubai.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/search-visible-personal-brand.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "articles/why-ai-automation-fails.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "book-preview.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "books.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "contact.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "custom-books.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "experience.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "gallery.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "hospitality-campaigns.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "index.html",
+      "role": "launcher-overview",
+      "implementationNote": "Use this as the navigation/overview entry only; implement each linked screen file as its own route/surface."
+    },
+    {
+      "file": "insights/search-is-not-dead-hotel-marketing.html",
+      "role": "landing-page",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "news.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "photography-for-brands.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/applied-ui.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/brand-assets.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/colors-primary.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/colors.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/components-buttons.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/components.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/index.html",
+      "role": "launcher-overview",
+      "implementationNote": "Use this as the navigation/overview entry only; implement each linked screen file as its own route/surface."
+    },
+    {
+      "file": "preview/radius-shadows.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/spacing-tokens.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/spacing.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/typography-specimens.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/typography.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "projects.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/blog-card.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/buttons.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/card-grid.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/cta-section.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/expertise-card.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/footer.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/gallery.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/header.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/hero.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/index.html",
+      "role": "launcher-overview",
+      "implementationNote": "Use this as the navigation/overview entry only; implement each linked screen file as its own route/surface."
+    },
+    {
+      "file": "ui_kits/app/news-feed.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/search-overlay.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/section-split.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/tags.html",
+      "role": "product-screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "video-content.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    }
+  ],
+  "screenFilePolicy": {
+    "mode": "screen-file-first",
+    "entryFileRole": "launcher-overview",
+    "rules": [
+      "Each distinct user-facing screen or surface must be delivered and implemented as its own file/route.",
+      "If a landing page is present or requested, keep it in landing.html and do not merge it into the product app screen.",
+      "When multiple HTML screens exist, index.html is a launcher/overview only; it must not be treated as the combined final UI.",
+      "Keep product app screens, landing pages, platform screens, and OS widget surfaces separate in production code."
+    ]
+  },
+  "appModules": [
+    "Identify domain-specific in-app modules from the exported UI; do not reduce them to generic cards.",
+    "For each major module, implement purpose, default/loading/empty/error/success states, and responsive behavior.",
+    "Keep app modules separate from OS home-screen widgets in the production component model."
+  ],
+  "osWidgets": [
+    "If the export includes home-screen, lock-screen, Live Activity, tablet glance, or Android widget surfaces, implement them as platform quick-access surfaces outside the app UI.",
+    "If none are present, do not invent OS widgets unless the product requirements request them."
+  ],
+  "landingPage": {
+    "detection": "Inspect files and screen names for a marketing/landing page surface. If present, keep it separate from product app screens.",
+    "requiredSections": [
+      "hero",
+      "value props",
+      "product proof/screenshots",
+      "feature proof",
+      "CTA"
+    ]
+  },
+  "tokens": {
+    "source": [
+      "colors_and_type.css",
+      "styles.css"
+    ],
+    "required": [
+      "background",
+      "surface",
+      "foreground",
+      "muted text",
+      "border",
+      "accent",
+      "radius",
+      "shadow",
+      "spacing",
+      "type scale",
+      "motion"
+    ],
+    "note": "Extract/freeze tokens before framework implementation so coding tools do not substitute default theme colors or typography."
+  },
+  "interactions": {
+    "source": [
+      "assets/lib/jquery.min.js",
+      "assets/lib/turn.js",
+      "search.js",
+      "theme.js"
+    ],
+    "requiredStates": [
+      "default",
+      "hover",
+      "focus",
+      "active",
+      "disabled",
+      "loading",
+      "empty",
+      "error",
+      "success"
+    ],
+    "requiredBehaviors": [
+      "forms/validation where present",
+      "tabs/filters where present",
+      "dialogs/sheets/drawers where present",
+      "copy/generate/share actions where present",
+      "player or quick controls where present"
+    ],
+    "note": "If the prototype is static, derive missing behavior from visible controls and document it before coding."
+  },
+  "responsiveViewports": [
+    {
+      "name": "mobile-compact",
+      "width": 360,
+      "height": 800,
+      "category": "mobile",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "mobile-standard",
+      "width": 390,
+      "height": 844,
+      "category": "mobile",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "mobile-large",
+      "width": 430,
+      "height": 932,
+      "category": "mobile",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "foldable-small-tablet",
+      "width": 600,
+      "height": 960,
+      "category": "foldable-tablet",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 820,
+      "height": 1180,
+      "category": "tablet",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "category": "tablet",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "laptop",
+      "width": 1366,
+      "height": 768,
+      "category": "desktop",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "category": "desktop",
+      "mustAvoidHorizontalScroll": true
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "category": "wide",
+      "mustAvoidHorizontalScroll": true
+    }
+  ],
+  "implementationChecklist": [
+    "Open entryFile first and map screens, modules, tokens, and interactions.",
+    "Extract tokens before writing framework components.",
+    "Implement app-specific modules with real states instead of generic card grids.",
+    "Preserve or rebuild JS interactions for meaningful UX actions.",
+    "Validate screenshots at desktop/tablet/mobile viewports with no horizontal overflow.",
+    "Keep landing pages, in-app modules, and OS widgets as separate implementation surfaces."
+  ]
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "title": "Home — Alisher Yakubov",
+    "description": "Hospitality marketing professional and digital creator based in the UAE. Hero, expertise, current projects, latest articles, and contact.",
+    "url": "/",
+    "category": "Page",
+    "keywords": "home, alisher yakubov, hospitality marketing, digital creator, uae, rotana, fujairah rotana, nour arjaan"
+  },
+  {
+    "title": "About — Alisher Yakubov",
+    "description": "Full biography: early career, marketing journey, AI journey, hospitality philosophy, digital transformation, professional values, skills, languages, and interests.",
+    "url": "/about",
+    "category": "Page",
+    "keywords": "about, biography, early career, marketing journey, ai journey, hospitality philosophy, digital transformation, professional values, skills, languages, interests"
+  },
+  {
+    "title": "Experience — Alisher Yakubov",
+    "description": "Detailed employment history: Fujairah Rotana Resort & Spa, Nour Arjaan by Rotana. Responsibilities, achievements, campaigns, and projects.",
+    "url": "/experience",
+    "category": "Page",
+    "keywords": "experience, work, employment, fujairah rotana resort, nour arjaan, rotana, cluster assistant marketing communications manager, campaigns, responsibilities, achievements"
+  },
+  {
+    "title": "Services — Alisher Yakubov",
+    "description": "Services overview: AI-powered marketing, video content, hospitality campaigns, photography for brands, and custom books.",
+    "url": "/projects",
+    "category": "Page",
+    "keywords": "services, ai-powered marketing, video content, hospitality campaigns, photography for brands, custom books, projects"
+  },
+  {
+    "title": "Books — Alisher Yakubov",
+    "description": "Published books and interactive flipbook previews. Open the cover, swipe through sample pages, and read a free preview of the illustrated children's book.",
+    "url": "/books",
+    "category": "Page",
+    "keywords": "books, published, children's book, flipbook, preview, illustrated, author"
+  },
+  {
+    "title": "Book Preview — Alisher Yakubov",
+    "description": "Interactive digital flipbook preview. Open the cover and swipe through the pages of the illustrated children's book.",
+    "url": "/book-preview",
+    "category": "Page",
+    "keywords": "book preview, flipbook, reader, children's book, interactive, swipe, pages"
+  },
+  {
+    "title": "News & Recognition — Alisher Yakubov",
+    "description": "Press coverage, industry recognition, expert contributions, published articles, professional events, and milestones.",
+    "url": "/news",
+    "category": "Page",
+    "keywords": "news, press, recognition, hospitality net, hotelier middle east, hozpitality, awards, expert commentary, linkedin articles, hsmai, futurelearn, certificates"
+  },
+  {
+    "title": "Articles — Alisher Yakubov",
+    "description": "Blog index with articles on hospitality marketing, AI, SEO, luxury hotels, digital transformation, real estate, agentic commerce, and content strategy.",
+    "url": "/articles",
+    "category": "Page",
+    "keywords": "articles, blog, hospitality marketing, ai, seo, luxury hotels, digital transformation, content strategy, real estate, agentic commerce, google search, guest experience"
+  },
+  {
+    "title": "Gallery — Alisher Yakubov",
+    "description": "Professional photos: hotel events, conferences, networking, speaking, awards, and behind the scenes.",
+    "url": "/gallery",
+    "category": "Page",
+    "keywords": "gallery, photos, hotel events, conferences, networking, speaking, awards, behind the scenes, professional photography"
+  },
+  {
+    "title": "Contact — Alisher Yakubov",
+    "description": "Get in touch: email, LinkedIn, Instagram, location in the United Arab Emirates.",
+    "url": "/contact",
+    "category": "Page",
+    "keywords": "contact, email, linkedin, instagram, united arab emirates, connect"
+  },
+  {
+    "title": "Search Is Not Dead. Weak Hotel Marketing Is.",
+    "description": "Travelers have not stopped searching; they have expanded where and how they search. Hotels now need one connected visibility strategy spanning high-intent search, AI answers and social discovery.",
+    "url": "/insights/search-is-not-dead-hotel-marketing",
+    "category": "Insight · Hospitality Marketing",
+    "date": "21 July 2026",
+    "keywords": "hotel search marketing, hotel visibility, hotel seo, ai search hospitality, google hotel ads, free booking links, hotel social media, hospitality marketing, hotel digital marketing, hotel branding, travel discovery, hotel booking"
+  },
+  {
+    "title": "AI Agents for a One-Person Business: A Practical Guide",
+    "description": "Running a business alone is hard. AI agents can help — but only if you know which tasks are worth automating and which ones will cost you more time than they save.",
+    "url": "/articles/ai-agents-one-person-business",
+    "category": "Article · AI & Automation",
+    "date": "17 July 2026",
+    "keywords": "ai agents, one person business, solo business, automation, ai automation, business automation, virtual assistant, agent workflows, n8n, zapier, make, ai tools for small business"
+  },
+  {
+    "title": "How AI Is Changing Real Estate: 12 Practical Use Cases and Their Risks",
+    "description": "From property search to closing deals, AI is reshaping every stage of the real estate journey. Here are 12 practical use cases — and the risks that come with each one.",
+    "url": "/articles/ai-changing-real-estate",
+    "category": "Article · AI & Real Estate",
+    "date": "17 July 2026",
+    "keywords": "ai real estate, property search ai, ai property valuation, real estate automation, proptech, ai risks real estate, dubai property ai, smart contracts, property management ai"
+  },
+  {
+    "title": "Dubai Real Estate Tokenization Explained: Opportunities, Costs and Risks",
+    "description": "Dubai Land Department launched a regulated pilot for property tokenization with fractional investments starting from AED 2,000. How it works, what returns may look like, and the risks every investor should understand.",
+    "url": "/articles/dubai-real-estate-tokenization",
+    "category": "Article · Real Estate & Blockchain",
+    "date": "17 July 2026",
+    "keywords": "dubai real estate tokenization, dld tokenization, property tokenization, fractional ownership, blockchain real estate dubai, aed 2000, real estate token, secondary market, dubai land department"
+  },
+  {
+    "title": "Local AI vs Cloud AI: Which One Should You Use in 2026?",
+    "description": "A hands-on comparison of local AI and cloud AI based on real testing on a 16 GB Apple Silicon Mac — covering privacy, speed, cost, model quality, image generation, voice, video, and when local AI is a waste of time.",
+    "url": "/articles/local-ai-vs-cloud-ai",
+    "category": "Article · AI & Technology",
+    "date": "16 July 2026",
+    "keywords": "local ai, cloud ai, local llm mac, local ai privacy, best local ai models, run ai locally, ollama, lm studio, mlx, apple silicon, stable diffusion, flux schnell, privacy, speed, cost, model quality, hardware limitations"
+  },
+  {
+    "title": "How to Analyse a Dubai Property Investment Using AI: A Practical Framework",
+    "description": "Dubai recorded more than 45,000 residential transactions worth AED 137 billion in Q1 2026. A practical, step-by-step framework for using AI to analyse whether a specific property is a worthwhile investment.",
+    "url": "/articles/analyse-dubai-property-ai",
+    "category": "Article · Real Estate & AI",
+    "date": "17 July 2026",
+    "keywords": "dubai property investment, ai property analysis, real estate roi, rental yield dubai, property investment framework, ai prompts real estate, dubai property market, investment analysis ai"
+  },
+  {
+    "title": "Why Most AI Automation Projects Fail After the Demo",
+    "description": "The demo works perfectly. The stakeholders are impressed. Then you deploy to production and everything falls apart. Here is why — and how to decide whether a process should be automated at all.",
+    "url": "/articles/why-ai-automation-fails",
+    "category": "Article · AI & Automation",
+    "date": "17 July 2026",
+    "keywords": "ai automation failure, automation projects, demo vs production, ai project management, automation pitfalls, when not to automate, ai deployment challenges, production automation"
+  },
+  {
+    "title": "Off-Plan vs Ready Property in Dubai: Which Investment Is Better for You?",
+    "description": "There is no universal answer. Off-plan and ready properties serve different investor profiles, timelines, and risk tolerances. A real decision framework with a scoring table you can use.",
+    "url": "/articles/off-plan-vs-ready-property-dubai",
+    "category": "Article · Real Estate & Investment",
+    "date": "17 July 2026",
+    "keywords": "off-plan vs ready, dubai property investment, off-plan dubai, ready property dubai, property investment comparison, dubai real estate, investor profile, scoring table, property risk"
+  },
+  {
+    "title": "I Tested Five AI Automations for Real Work—Here Is What Actually Saved Time",
+    "description": "Content research, social media, email/CRM, website creation, and image/video production. Five experiments, honest results — what saved time, what failed, and whether I still use each one.",
+    "url": "/articles/ai-automation-what-worked",
+    "category": "Article · AI & Automation",
+    "date": "17 July 2026",
+    "keywords": "ai automation experiments, content research automation, social media automation, email crm automation, website creation ai, image video ai, ai productivity, automation results, what worked"
+  },
+  {
+    "title": "How to Build and Sell a Digital Product With AI in Seven Days",
+    "description": "Ebooks, templates, checklists, mini courses, prompt systems, Notion templates, children's books. A practical day-by-day blueprint for creating a digital product with AI — and why most AI-generated products fail.",
+    "url": "/articles/build-digital-product-ai",
+    "category": "Article · Digital Business & AI",
+    "date": "17 July 2026",
+    "keywords": "digital product, ai ebook, sell digital products, gumroad, etsy, amazon kdp, prompt systems, notion templates, digital business, ai product creation, seven day blueprint"
+  },
+  {
+    "title": "Agentic Commerce Explained: What Happens When AI Starts Buying for Us",
+    "description": "The next shift after e-commerce and mobile commerce is agentic commerce — AI agents that browse, compare, negotiate, and purchase on behalf of humans. What is real today, what is coming, and why UAE merchants should prepare now.",
+    "url": "/articles/agentic-commerce",
+    "category": "Article · AI & Commerce",
+    "date": "17 July 2026",
+    "keywords": "agentic commerce, ai shopping agent, stripe agent payments, ai commerce, autonomous shopping, ai agent buying, e-commerce future, uae commerce, merchant readiness, structured data products"
+  },
+  {
+    "title": "Is It Possible to Build and Launch a Multi-Page Website for AED 40?",
+    "description": "How I built a professional multi-page personal website for AED 40 — the cost of a domain name — using a combination of AI models in under six hours.",
+    "url": "/articles/multi-page-website-aed-40",
+    "category": "Article · AI & Web Development",
+    "date": "16 July 2026",
+    "keywords": "website, aed 40, ai, multi-page website, domain, deployment, kimi, qwen, minimax, google search console, seo, personal website, low cost"
+  },
+  {
+    "title": "The Future of Search Marketing for Hospitality Brands",
+    "description": "Alisher Yakubov reflects on Hospitality Net's Digital Marketing in Hospitality World Panel: why traditional search is evolving, not dying, and how hotels should balance search, AI visibility, and social discovery.",
+    "url": "/articles/future-search-marketing-hospitality",
+    "category": "Article · Search & Hospitality",
+    "date": "27 March 2026",
+    "keywords": "search marketing, traditional search, ai search, social discovery, hospitality, hotels, direct bookings, ota, hospitality net, world panel"
+  },
+  {
+    "title": "How the Google Knowledge Graph Works for Hospitality Professionals",
+    "description": "A practical explanation of how Google's Knowledge Graph connects people, organizations, and topics — and what hospitality marketers can do to help search engines understand their professional identity.",
+    "url": "/articles/google-knowledge-graph-hospitality",
+    "category": "Article · SEO & Entity",
+    "date": "15 June 2025",
+    "keywords": "google knowledge graph, entity, seo, hospitality, professional identity, structured data, schema, knowledge panel"
+  },
+  {
+    "title": "Luxury Hotel Content Strategy",
+    "description": "A practical framework for luxury hotel content strategy: avoid sterile or overly promotional content, align with search intent and guest journey, and measure what drives direct bookings.",
+    "url": "/articles/luxury-hotel-content-strategy",
+    "category": "Article · Content & Hospitality",
+    "date": "12 June 2025",
+    "keywords": "luxury hotel, content strategy, search intent, guest journey, direct bookings, content marketing"
+  },
+  {
+    "title": "How to Build a Search-Visible Personal Brand",
+    "description": "Independent professionals can build a search-visible personal brand by creating a canonical website, using consistent name and role signals, structured data, focused content, internal linking, and persistent publishing.",
+    "url": "/articles/search-visible-personal-brand",
+    "category": "Article · SEO & Strategy",
+    "date": "14 April 2025",
+    "keywords": "personal brand, search visibility, canonical website, structured data, schema, internal linking, publishing, seo"
+  },
+  {
+    "title": "Practical AI-Assisted Workflows for Hospitality Marketing",
+    "description": "A practical guide to using AI in hospitality marketing without losing brand warmth: ideation, drafting, image and video support, approval workflows, and disclosure for hotel marketers.",
+    "url": "/articles/ai-workflows-hospitality-marketing",
+    "category": "Article · AI & Hospitality",
+    "date": "12 March 2025",
+    "keywords": "ai workflows, hospitality marketing, ai ideation, drafting, image generation, video, approval workflows, disclosure, hotel marketing"
+  },
+  {
+    "title": "AI-Powered Marketing — Alisher Yakubov",
+    "description": "AI-assisted marketing workflows for hospitality and brands: ideation, drafting, visuals, editing, and distribution without replacing creative control.",
+    "url": "/ai-powered-marketing",
+    "category": "Service",
+    "keywords": "ai marketing, ai-powered marketing, ai workflows, content ideation, ai-assisted, hospitality marketing ai, automation"
+  },
+  {
+    "title": "Video Content — Alisher Yakubov",
+    "description": "Video content and storytelling for hospitality and brands: explainers, case studies, behind-the-scenes, and short-form social video.",
+    "url": "/video-content",
+    "category": "Service",
+    "keywords": "video content, video production, hospitality video, youtube, short-form video, explainer, behind the scenes, case study video"
+  },
+  {
+    "title": "Hospitality Campaigns — Alisher Yakubov",
+    "description": "Integrated campaigns for luxury hotels and resorts: audience, message, content, channel, timing, and measurement around one strong concept.",
+    "url": "/hospitality-campaigns",
+    "category": "Service",
+    "keywords": "hospitality campaigns, hotel campaigns, resort marketing, luxury hotel marketing, integrated campaigns, rotana, fujairah rotana"
+  },
+  {
+    "title": "Photography for Brands — Alisher Yakubov",
+    "description": "Professional photography for properties, events, food, interiors, and portraits — planned with marketing objectives in mind.",
+    "url": "/photography-for-brands",
+    "category": "Service",
+    "keywords": "photography, brand photography, hotel photography, event photography, food photography, interior photography, portrait, product photography"
+  },
+  {
+    "title": "Custom Books — Alisher Yakubov",
+    "description": "Independently published children's books with interactive flipbook previews — content development, production, publishing, and marketing.",
+    "url": "/custom-books",
+    "category": "Service",
+    "keywords": "custom books, children's books, self publishing, flipbook, illustrated book, book publishing, author services"
+  }
+]

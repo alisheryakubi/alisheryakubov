@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header / Nav — UI Kit</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .demo-header { position: static; }
+  .demo-header .container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .demo-nav { display: flex; gap: 4px; }
+  .demo-nav a { padding: 8px 14px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; color: var(--fg); text-decoration: none; }
+  .demo-nav a:hover { background: var(--surface); text-decoration: none; }
+  .demo-nav a.active { background: var(--fg); color: var(--bg); }
+  .search-trigger { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: transparent; color: var(--muted); font-size: 13px; font-family: inherit; cursor: pointer; }
+  .search-trigger:hover { border-color: var(--muted); }
+  .search-trigger kbd { font-family: var(--font-mono); font-size: 11px; padding: 1px 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); }
+  .header-actions { display: flex; align-items: center; gap: 16px; }
+  /* CSS-only hamburger */
+  .nav-toggle { display: none; position: relative; width: 24px; height: 18px; cursor: pointer; }
+  .nav-toggle span { position: absolute; left: 0; right: 0; height: 2px; background: var(--fg); border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
+  .nav-toggle span:nth-child(1) { top: 0; }
+  .nav-toggle span:nth-child(2) { top: 8px; }
+  .nav-toggle span:nth-child(3) { top: 16px; }
+  .nav-toggle input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+  .nav-toggle input:checked ~ span:nth-child(2) { transform: rotate(45deg); top: 8px; }
+  .nav-toggle input:checked ~ span:nth-child(3) { transform: rotate(-45deg); top: 8px; }
+  .nav-toggle input:checked ~ span:nth-child(4) { opacity: 0; }
+  .mobile-menu { display: none; }
+  @media (max-width: 767px) {
+    .demo-nav { display: none; }
+    .nav-toggle { display: block; }
+    .nav-toggle input:checked ~ .mobile-menu { display: flex; flex-direction: column; gap: 4px; position: absolute; top: 72px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 16px clamp(20px, 4vw, 48px); z-index: 100; }
+    .nav-toggle input:checked ~ .mobile-menu a { padding: 12px 14px; border-radius: var(--radius-sm); font-size: 15px; font-weight: 500; color: var(--fg); text-decoration: none; }
+    .nav-toggle input:checked ~ .mobile-menu a:hover { background: var(--surface); }
+    .nav-toggle { position: relative; }
+  }
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  .demo-section { max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .demo-section h3 { font-size: 18px; margin: 40px 0 16px; }
+  .demo-section h3:first-of-type { margin-top: 0; }
+  .demo-box { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 24px; }
+  .demo-box .demo-header { background: rgba(255,255,255,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .demo-fill { padding: 48px 0; text-align: center; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html" class="back-link eyebrow">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    UI Kit
+  </a>
+  <span class="eyebrow">Layout</span>
+  <h1>Header / Nav</h1>
+  <p>Sticky frosted-glass header with CSS-only hamburger on mobile and a search trigger button.</p>
+</header>
+
+<main class="demo-section">
+  <h3>Desktop</h3>
+  <div class="demo-box" data-od-id="header-desktop">
+    <header class="site-header demo-header">
+      <div class="container">
+        <a href="#" class="logo">Alisher<span>Yakubov</span></a>
+        <nav class="demo-nav">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Experience</a>
+          <a href="#">Projects</a>
+          <a href="#">Articles</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="demo-fill">— page content —</div>
+  </div>
+
+  <h3>With search trigger</h3>
+  <div class="demo-box" data-od-id="header-search">
+    <header class="site-header demo-header">
+      <div class="container">
+        <a href="#" class="logo">Alisher<span>Yakubov</span></a>
+        <div class="header-actions">
+          <nav class="demo-nav">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+          </nav>
+          <button class="search-trigger" onclick="alert('See search-overlay.html for full implementation')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            Search
+            <kbd>⌘K</kbd>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="demo-fill">— page content —</div>
+  </div>
+
+  <h3>Mobile (CSS-only hamburger)</h3>
+  <div class="demo-box" data-od-id="header-mobile" style="max-width:375px;">
+    <header class="site-header demo-header" style="position:relative;">
+      <div class="container">
+        <a href="#" class="logo">Alisher<span>Yakubov</span></a>
+        <div class="nav-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Experience</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="demo-fill">— page content —</div>
+  </div>
+</main>
+
+</body>
+</html>

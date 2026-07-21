@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spacing — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .spacing-container { max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  .spacing-row { padding: 20px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .spacing-row:last-child { border-bottom: none; }
+  .spacing-label { font-family: var(--font-mono); font-size: 13px; font-weight: 600; min-width: 200px; }
+  .spacing-value { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+  .spacing-bar { height: 24px; background: var(--accent); border-radius: 4px; }
+  .bp-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+  .bp-chip { padding: 8px 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 13px; color: var(--fg); }
+  .bp-chip span { color: var(--muted); }
+  .demo-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 24px; }
+  @media (min-width: 640px) { .demo-grid { grid-template-columns: 1fr 1fr; } }
+  .demo-grid > div { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; font-size: 14px; color: var(--muted); }
+  h3.section-title { font-size: 18px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link eyebrow" style="margin-bottom:24px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All previews
+  </a>
+  <span class="eyebrow">Layout</span>
+  <h1>Spacing & Grid</h1>
+  <p>Mobile-first with three breakpoints. Container max-width 1200px. Section padding is fluid. Split layout goes asymmetric at desktop.</p>
+</div>
+
+<div class="spacing-container">
+
+  <h3 class="section-title" style="margin-top:0;">Spacing tokens</h3>
+
+  <div class="spacing-row" data-od-id="spacing-section">
+    <span class="spacing-label">Section padding</span>
+    <div class="spacing-bar" style="width:100%;max-width:400px;"></div>
+    <span class="spacing-value">clamp(72px, 10vw, 140px)</span>
+  </div>
+
+  <div class="spacing-row" data-od-id="spacing-section-sm">
+    <span class="spacing-label">Section-sm padding</span>
+    <div class="spacing-bar" style="width:60%;max-width:240px;"></div>
+    <span class="spacing-value">clamp(40px, 6vw, 80px)</span>
+  </div>
+
+  <div class="spacing-row" data-od-id="spacing-container">
+    <span class="spacing-label">Container padding</span>
+    <div class="spacing-bar" style="width:12%;max-width:48px;"></div>
+    <span class="spacing-value">clamp(20px, 4vw, 48px)</span>
+  </div>
+
+  <div class="spacing-row" data-od-id="spacing-split">
+    <span class="spacing-label">Split gap</span>
+    <div class="spacing-bar" style="width:12%;max-width:48px;"></div>
+    <span class="spacing-value">clamp(24px, 4vw, 48px)</span>
+  </div>
+
+  <div class="spacing-row" data-od-id="spacing-card">
+    <span class="spacing-label">Card padding</span>
+    <div class="spacing-bar" style="width:7%;max-width:28px;"></div>
+    <span class="spacing-value">28px</span>
+  </div>
+
+  <div class="spacing-row" data-od-id="spacing-card-gap">
+    <span class="spacing-label">Card grid gap</span>
+    <div class="spacing-bar" style="width:4%;max-width:16px;"></div>
+    <span class="spacing-value">16px</span>
+  </div>
+
+  <div class="spacing-row" data-od-id="spacing-button-gap">
+    <span class="spacing-label">Button group gap</span>
+    <div class="spacing-bar" style="width:3%;max-width:12px;"></div>
+    <span class="spacing-value">12px</span>
+  </div>
+
+  <h3 class="section-title" style="margin-top:48px;">Breakpoints</h3>
+  <div class="bp-row" data-od-id="breakpoints">
+    <span class="bp-chip">640px <span>card grids 2-up</span></span>
+    <span class="bp-chip">768px <span>split, inline nav, gallery 3-up</span></span>
+    <span class="bp-chip">1024px <span>asymmetric split, grids 3–4 up</span></span>
+  </div>
+
+  <h3 class="section-title" style="margin-top:48px;">Split layout demo</h3>
+  <div class="split" data-od-id="split-demo">
+    <div class="left">
+      <span class="eyebrow">Left column</span>
+      <h2>Label &amp; heading</h2>
+    </div>
+    <div class="right">
+      <p style="font-size:14px;color:var(--muted);">Body content goes here. At ≥768px this becomes a two-column layout. At ≥1024px it goes asymmetric (0.9fr / 1.1fr) giving the body more room.</p>
+    </div>
+  </div>
+
+  <h3 class="section-title" style="margin-top:48px;">Card grid demo</h3>
+  <div class="card-grid card-grid-2 card-grid-3" data-od-id="card-grid-demo">
+    <div class="card"><span class="eyebrow" style="margin-bottom:8px;">1</span><p style="font-size:14px;color:var(--muted);margin:0;">Card in a 3-column grid at ≥1024px.</p></div>
+    <div class="card"><span class="eyebrow" style="margin-bottom:8px;">2</span><p style="font-size:14px;color:var(--muted);margin:0;">2-column at ≥640px.</p></div>
+    <div class="card"><span class="eyebrow" style="margin-bottom:8px;">3</span><p style="font-size:14px;color:var(--muted);margin:0;">1-column on mobile.</p></div>
+  </div>
+
+</div>
+
+</body>
+</html>

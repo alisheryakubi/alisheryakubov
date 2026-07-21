@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Feed — UI Kit</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  .demo-section { max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .news-feed { display: flex; flex-direction: column; gap: 0; }
+  .news-item { display: grid; grid-template-columns: 170px 1fr; gap: 32px; padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .news-item:last-child { border-bottom: none; }
+  .news-date { font-family: var(--font-mono); font-size: 13px; color: var(--muted); white-space: nowrap; padding-top: 4px; }
+  .news-body { display: flex; flex-direction: column; gap: 8px; }
+  .news-body h3 { font-size: 18px; }
+  .news-body h3 a { color: var(--fg); text-decoration: none; }
+  .news-body h3 a:hover { color: var(--accent); text-decoration: none; }
+  .news-body p { color: var(--muted); font-size: 15px; line-height: 1.55; }
+  .news-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+  @media (max-width: 767px) { .news-item { grid-template-columns: 1fr; gap: 8px; } .news-date { padding-top: 0; } }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html" class="back-link eyebrow">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    UI Kit
+  </a>
+  <span class="eyebrow">Component</span>
+  <h1>News Feed</h1>
+  <p>Timeline-style news list: 170px date column on the left, body grid on the right. Each item separated by a hairline border.</p>
+</header>
+
+<main class="demo-section">
+  <div class="news-feed" data-od-id="news-feed">
+    <div class="news-item">
+      <div class="news-date">Jan 15, 2026</div>
+      <div class="news-body">
+        <h3><a href="#">New article: AI workflows in hospitality marketing</a></h3>
+        <p>Published a practical guide on using AI tools for campaign ideation and content drafting in hotel marketing teams.</p>
+        <div class="news-tags">
+          <span class="tag">Article</span>
+          <span class="tag">AI</span>
+          <span class="tag">Marketing</span>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">Dec 3, 2025</div>
+      <div class="news-body">
+        <h3><a href="#">Fujairah Rotana winter campaign launch</a></h3>
+        <p>Supported the launch of the winter season campaign across social media and on-property channels.</p>
+        <div class="news-tags">
+          <span class="tag">Campaign</span>
+          <span class="tag">Social Media</span>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">Nov 20, 2025</div>
+      <div class="news-body">
+        <h3><a href="#">Speaking engagement: Hospitality marketing panel</a></h3>
+        <p>Participated in a panel discussion on digital trends in UAE hospitality marketing.</p>
+        <div class="news-tags">
+          <span class="tag">Event</span>
+          <span class="tag">Speaking</span>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">Oct 8, 2025</div>
+      <div class="news-body">
+        <h3><a href="#">Photography project: Nour Arjaan by Rotana</a></h3>
+        <p>Completed a property photography shoot for promotional materials and social media content.</p>
+        <div class="news-tags">
+          <span class="tag">Photography</span>
+          <span class="tag">Project</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

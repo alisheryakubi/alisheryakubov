@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colors — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .swatch-grid { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  @media (min-width: 640px) { .swatch-grid { grid-template-columns: 1fr 1fr; } }
+  .swatch { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .swatch-color { height: 120px; display: flex; align-items: flex-end; padding: 16px; }
+  .swatch-color span { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.01em; padding: 4px 10px; border-radius: 6px; background: rgba(255,255,255,0.85); color: var(--fg); }
+  .swatch-info { padding: 20px 24px; }
+  .swatch-info .token { font-family: var(--font-mono); font-size: 14px; font-weight: 600; color: var(--fg); margin-bottom: 4px; }
+  .swatch-info .value { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .swatch-info .usage { font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link eyebrow" style="margin-bottom:24px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All previews
+  </a>
+  <span class="eyebrow">Palette</span>
+  <h1>Colors</h1>
+  <p>Ten tokens in OKLch for perceptual uniformity. One accent (navy). Surface bands create rhythm. No gradients.</p>
+</div>
+
+<div class="swatch-grid">
+  <div class="swatch" data-od-id="swatch-bg">
+    <div class="swatch-color" style="background:var(--bg);"><span>99.2% 0.003 260</span></div>
+    <div class="swatch-info"><div class="token">--bg</div><div class="value">oklch(99.2% 0.003 260)</div><div class="usage">Page background — cool near-white.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-surface">
+    <div class="swatch-color" style="background:var(--surface);"><span>97.5% 0.005 260</span></div>
+    <div class="swatch-info"><div class="token">--surface</div><div class="value">oklch(97.5% 0.005 260)</div><div class="usage">Cards, subtle section bands.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-surface-2">
+    <div class="swatch-color" style="background:var(--surface-2);"><span>94% 0.008 260</span></div>
+    <div class="swatch-info"><div class="token">--surface-2</div><div class="value">oklch(94% 0.008 260)</div><div class="usage">Hover/focus states, dividers, placeholders.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-fg">
+    <div class="swatch-color" style="background:var(--fg);"><span style="color:var(--bg);background:rgba(255,255,255,0.15);">17% 0.02 260</span></div>
+    <div class="swatch-info"><div class="token">--fg</div><div class="value">oklch(17% 0.02 260)</div><div class="usage">Primary text, headings.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-muted">
+    <div class="swatch-color" style="background:var(--muted);"><span style="color:var(--bg);background:rgba(255,255,255,0.15);">48% 0.03 260</span></div>
+    <div class="swatch-info"><div class="token">--muted</div><div class="value">oklch(48% 0.03 260)</div><div class="usage">Secondary text, captions, footer links.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-border">
+    <div class="swatch-color" style="background:var(--border);"><span>85% 0.02 260</span></div>
+    <div class="swatch-info"><div class="token">--border</div><div class="value">oklch(85% 0.02 260)</div><div class="usage">Hairlines, card borders, dividers.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-accent">
+    <div class="swatch-color" style="background:var(--accent);"><span style="color:var(--accent-text);background:rgba(255,255,255,0.15);">30% 0.09 255</span></div>
+    <div class="swatch-info"><div class="token">--accent</div><div class="value">oklch(30% 0.09 255)</div><div class="usage">Primary navy — buttons, links, eyebrows, CTA bg.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-accent-hover">
+    <div class="swatch-color" style="background:var(--accent-hover);"><span style="color:var(--accent-text);background:rgba(255,255,255,0.15);">24% 0.08 255</span></div>
+    <div class="swatch-info"><div class="token">--accent-hover</div><div class="value">oklch(24% 0.08 255)</div><div class="usage">Button hover state.</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-accent-text">
+    <div class="swatch-color" style="background:var(--accent-text);"><span>99% 0.005 260</span></div>
+    <div class="swatch-info"><div class="token">--accent-text</div><div class="value">oklch(99% 0.005 260)</div><div class="usage">Text on accent (CTA sections, button fills).</div></div>
+  </div>
+  <div class="swatch" data-od-id="swatch-accent-soft">
+    <div class="swatch-color" style="background:var(--accent-soft);"><span>96% 0.02 255</span></div>
+    <div class="swatch-info"><div class="token">--accent-soft</div><div class="value">oklch(96% 0.02 255)</div><div class="usage">Tinted surfaces, secondary button hover.</div></div>
+  </div>
+</div>
+
+</body>
+</html>

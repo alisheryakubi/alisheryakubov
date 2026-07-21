@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preview Cards — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  body { background: var(--bg); padding: 48px 0; }
+  .preview-grid { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 720px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  @media (min-width: 640px) { .preview-grid { grid-template-columns: 1fr 1fr; } }
+  .preview-card { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 28px; transition: border-color 0.15s, box-shadow 0.15s; }
+  .preview-card:hover { border-color: var(--muted); box-shadow: var(--shadow-md); text-decoration: none; }
+  .preview-card .eyebrow { margin-bottom: 12px; }
+  .preview-card h2 { font-size: 22px; margin: 0 0 8px; }
+  .preview-card p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.5; }
+  .page-header { max-width: 720px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <span class="eyebrow">Design System</span>
+  <h1>alisheryakubov.com — Preview Cards</h1>
+  <p>Focused review surfaces for colors, typography, spacing, radius/shadows, components, brand assets, and applied UI. Open any card to inspect the tokens and patterns.</p>
+</header>
+
+<main>
+  <div class="preview-grid">
+    <a href="colors-primary.html" class="preview-card" data-od-id="preview-colors-primary">
+      <span class="eyebrow">Palette</span>
+      <h2>Colors — Primary</h2>
+      <p>10 OKLch tokens with hex fallbacks — bg, surface, fg, muted, border, accent family.</p>
+    </a>
+    <a href="colors.html" class="preview-card" data-od-id="preview-colors">
+      <span class="eyebrow">Palette</span>
+      <h2>Colors</h2>
+      <p>Full palette overview — all swatches with values and usage.</p>
+    </a>
+    <a href="typography-specimens.html" class="preview-card" data-od-id="preview-typography-specimens">
+      <span class="eyebrow">Type</span>
+      <h2>Typography — Specimens</h2>
+      <p>Source Serif 4 display + Inter body + SF Mono. Full type scale specimens.</p>
+    </a>
+    <a href="typography.html" class="preview-card" data-od-id="preview-typography">
+      <span class="eyebrow">Type</span>
+      <h2>Typography</h2>
+      <p>Full type scale with sizes, weights, and tracking.</p>
+    </a>
+    <a href="spacing-tokens.html" class="preview-card" data-od-id="preview-spacing-tokens">
+      <span class="eyebrow">Layout</span>
+      <h2>Spacing — Tokens</h2>
+      <p>Container, section, split, card grid gaps. Breakpoints with visual bars.</p>
+    </a>
+    <a href="spacing.html" class="preview-card" data-od-id="preview-spacing">
+      <span class="eyebrow">Layout</span>
+      <h2>Spacing & Grid</h2>
+      <p>Full spacing and layout grid reference.</p>
+    </a>
+    <a href="radius-shadows.html" class="preview-card" data-od-id="preview-radius">
+      <span class="eyebrow">Elevation</span>
+      <h2>Radius & Shadows</h2>
+      <p>12px cards, 8px buttons, 999px tags. Two shadow levels.</p>
+    </a>
+    <a href="components-buttons.html" class="preview-card" data-od-id="preview-components-buttons">
+      <span class="eyebrow">Components</span>
+      <h2>Components — Buttons</h2>
+      <p>Primary, secondary, on-accent buttons with hover states.</p>
+    </a>
+    <a href="components.html" class="preview-card" data-od-id="preview-components">
+      <span class="eyebrow">Components</span>
+      <h2>Components</h2>
+      <p>Buttons, cards, tags, icon spots, blockquote, lists, tables.</p>
+    </a>
+    <a href="brand-assets.html" class="preview-card" data-od-id="preview-assets">
+      <span class="eyebrow">Assets</span>
+      <h2>Brand Assets</h2>
+      <p>Logo, portrait, OG images, gallery thumbnails — preserved from source.</p>
+    </a>
+    <a href="applied-ui.html" class="preview-card" data-od-id="preview-applied" style="grid-column: 1 / -1;">
+      <span class="eyebrow">Composed</span>
+      <h2>Applied UI Surface</h2>
+      <p>Full page composition: header + hero + split section + card grid + CTA + footer. Demonstrates the system assembled.</p>
+    </a>
+  </div>
+</main>
+
+</body>
+</html>

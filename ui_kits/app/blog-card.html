@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Card — UI Kit</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  .demo-section { max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .demo-section h3 { font-size: 18px; margin: 40px 0 16px; }
+  .demo-section h3:first-of-type { margin-top: 0; }
+  .blog-card-link { text-decoration: none; color: inherit; display: block; }
+  .blog-card-link:hover { text-decoration: none; }
+  .blog-card-meta { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html" class="back-link eyebrow">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    UI Kit
+  </a>
+  <span class="eyebrow">Component</span>
+  <h1>Blog Card</h1>
+  <p>Link card with eyebrow, title, excerpt, and meta. Hover lifts the border and title color shifts.</p>
+</header>
+
+<main class="demo-section">
+  <h3>Article cards</h3>
+  <div class="card-grid card-grid-2 card-grid-3" data-od-id="blog-cards">
+    <a href="#" class="blog-card-link">
+      <article class="card">
+        <span class="eyebrow">Article</span>
+        <h3>AI workflows in hospitality marketing</h3>
+        <p>Practical ways to use AI tools for campaign ideation, content drafting, and scheduling without losing brand voice.</p>
+        <div class="blog-card-meta">Jan 2026 &middot; 8 min read</div>
+      </article>
+    </a>
+    <a href="#" class="blog-card-link">
+      <article class="card">
+        <span class="eyebrow">Article</span>
+        <h3>Building a content calendar</h3>
+        <p>A simple framework for planning hotel social media content across channels.</p>
+        <div class="blog-card-meta">Dec 2025 &middot; 5 min read</div>
+      </article>
+    </a>
+    <a href="#" class="blog-card-link">
+      <article class="card">
+        <span class="eyebrow">Article</span>
+        <h3>Photography on property</h3>
+        <p>How to capture hotel content without expensive equipment or studios.</p>
+        <div class="blog-card-meta">Nov 2025 &middot; 6 min read</div>
+      </article>
+    </a>
+  </div>
+
+  <h3>Featured article (wide)</h3>
+  <a href="#" class="blog-card-link">
+    <article class="card" style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;" data-od-id="blog-featured">
+      <img src="../../assets/og-articles.jpg" alt="" style="width:100%;aspect-ratio:1.91/1;object-fit:cover;border-radius:var(--radius-sm);">
+      <div>
+        <span class="eyebrow">Featured</span>
+        <h3>AI workflows in hospitality marketing</h3>
+        <p>Practical ways to use AI tools for campaign ideation, content drafting, and scheduling without losing brand voice.</p>
+        <div class="blog-card-meta">Jan 2026 &middot; 8 min read</div>
+      </div>
+    </article>
+  </a>
+</main>
+
+</body>
+</html>

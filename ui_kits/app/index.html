@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Kit — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  body { padding: 48px 0; }
+  .kit-grid { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  @media (min-width: 640px) { .kit-grid { grid-template-columns: 1fr 1fr; } }
+  .kit-card { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: border-color 0.15s, box-shadow 0.15s; }
+  .kit-card:hover { border-color: var(--muted); box-shadow: var(--shadow-md); text-decoration: none; }
+  .kit-card .eyebrow { margin-bottom: 10px; }
+  .kit-card h2 { font-size: 20px; margin: 0 0 6px; }
+  .kit-card p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.5; }
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <span class="eyebrow">Design System</span>
+  <h1>UI Kit — alisheryakubov.com</h1>
+  <p>Applied component implementations extracted from the live site. Each file is standalone — open it to inspect the pattern with live tokens.</p>
+</header>
+
+<main>
+  <div class="kit-grid">
+    <a href="header.html" class="kit-card" data-od-id="kit-header">
+      <span class="eyebrow">Layout</span>
+      <h2>Header / Nav</h2>
+      <p>Sticky frosted-glass header, CSS-only hamburger, search button.</p>
+    </a>
+    <a href="hero.html" class="kit-card" data-od-id="kit-hero">
+      <span class="eyebrow">Layout</span>
+      <h2>Hero</h2>
+      <p>Eyebrow + H1 + lead + buttons + portrait photo.</p>
+    </a>
+    <a href="section-split.html" class="kit-card" data-od-id="kit-split">
+      <span class="eyebrow">Layout</span>
+      <h2>Section Split</h2>
+      <p>Two-column editorial: label left, body right.</p>
+    </a>
+    <a href="card-grid.html" class="kit-card" data-od-id="kit-card-grid">
+      <span class="eyebrow">Layout</span>
+      <h2>Card Grid</h2>
+      <p>Responsive grids: 1, 2, 3, 4 columns.</p>
+    </a>
+    <a href="expertise-card.html" class="kit-card" data-od-id="kit-expertise">
+      <span class="eyebrow">Component</span>
+      <h2>Expertise Card</h2>
+      <p>Icon spot + title + description.</p>
+    </a>
+    <a href="blog-card.html" class="kit-card" data-od-id="kit-blog-card">
+      <span class="eyebrow">Component</span>
+      <h2>Blog Card</h2>
+      <p>Link card with hover border + shadow.</p>
+    </a>
+    <a href="news-feed.html" class="kit-card" data-od-id="kit-news">
+      <span class="eyebrow">Component</span>
+      <h2>News Feed</h2>
+      <p>Timeline: date + body grid with category.</p>
+    </a>
+    <a href="gallery.html" class="kit-card" data-od-id="kit-gallery">
+      <span class="eyebrow">Component</span>
+      <h2>Gallery</h2>
+      <p>Square image grid with hover scale.</p>
+    </a>
+    <a href="cta-section.html" class="kit-card" data-od-id="kit-cta">
+      <span class="eyebrow">Section</span>
+      <h2>CTA Section</h2>
+      <p>Accent background, inverted buttons.</p>
+    </a>
+    <a href="footer.html" class="kit-card" data-od-id="kit-footer">
+      <span class="eyebrow">Layout</span>
+      <h2>Footer</h2>
+      <p>4-column: brand + link columns.</p>
+    </a>
+    <a href="buttons.html" class="kit-card" data-od-id="kit-buttons">
+      <span class="eyebrow">Component</span>
+      <h2>Buttons</h2>
+      <p>Primary, secondary, on-accent variants.</p>
+    </a>
+    <a href="tags.html" class="kit-card" data-od-id="kit-tags">
+      <span class="eyebrow">Component</span>
+      <h2>Tags</h2>
+      <p>Pill chips for categories and labels.</p>
+    </a>
+    <a href="search-overlay.html" class="kit-card" data-od-id="kit-search" style="grid-column:1/-1;">
+      <span class="eyebrow">Interaction</span>
+      <h2>Search Overlay</h2>
+      <p>Vanilla JS command-palette style search. Press / or Cmd+K to open.</p>
+    </a>
+  </div>
+</main>
+
+</body>
+</html>

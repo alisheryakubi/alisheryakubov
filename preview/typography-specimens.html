@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typography — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .type-container { max-width: 820px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .page-header { max-width: 820px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  .type-row { padding: 28px 0; border-bottom: 1px solid var(--border); }
+  .type-row:last-child { border-bottom: none; }
+  .type-meta { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 12px; }
+  .type-meta span { font-family: var(--font-mono); font-size: 12px; color: var(--muted); letter-spacing: 0.01em; }
+  .type-meta .role { font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+  .type-spec { font-family: var(--font-display); }
+  .type-spec-body { font-family: var(--font-body); }
+  .type-spec-mono { font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link eyebrow" style="margin-bottom:24px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All previews
+  </a>
+  <span class="eyebrow">Type</span>
+  <h1>Typography</h1>
+  <p>Source Serif 4 for display and headings. Inter for body and UI. SF Mono for dates and credentials (rare). Negative tracking on headings, slight positive tracking on small text.</p>
+</div>
+
+<div class="type-container">
+
+  <div class="type-row" data-od-id="type-display-h1">
+    <div class="type-meta"><span class="role">Display H1</span><span>Source Serif 4</span><span>clamp(44px, 5.5vw, 72px)</span><span>1.05</span><span>-0.03em</span><span>600</span></div>
+    <div class="type-spec" style="font-size:clamp(44px,5.5vw,72px);line-height:1.05;letter-spacing:-0.03em;font-weight:600;">Hospitality Marketing</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-h1">
+    <div class="type-meta"><span class="role">H1</span><span>Source Serif 4</span><span>clamp(36px, 4vw, 56px)</span><span>1.08</span><span>-0.025em</span><span>600</span></div>
+    <div class="type-spec" style="font-size:clamp(36px,4vw,56px);line-height:1.08;letter-spacing:-0.025em;font-weight:600;">Alisher Yakubov</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-h2">
+    <div class="type-meta"><span class="role">H2</span><span>Source Serif 4</span><span>clamp(28px, 3vw, 40px)</span><span>1.12</span><span>-0.02em</span><span>600</span></div>
+    <div class="type-spec" style="font-size:clamp(28px,3vw,40px);line-height:1.12;letter-spacing:-0.02em;font-weight:600;">Who is Alisher Yakubov?</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-h3">
+    <div class="type-meta"><span class="role">H3</span><span>Source Serif 4</span><span>clamp(22px, 2.2vw, 28px)</span><span>1.2</span><span>-0.01em</span><span>550</span></div>
+    <div class="type-spec" style="font-size:clamp(22px,2.2vw,28px);line-height:1.2;letter-spacing:-0.01em;font-weight:550;">Luxury Hospitality Marketing</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-lead">
+    <div class="type-meta"><span class="role">Lead</span><span>Inter</span><span>clamp(18px, 1.8vw, 22px)</span><span>1.55</span><span>0</span><span>450</span></div>
+    <div class="type-spec-body" style="font-size:clamp(18px,1.8vw,22px);line-height:1.55;color:var(--muted);max-width:65ch;">Based in the United Arab Emirates, working across hospitality marketing, brand communications, digital content, and AI-assisted creative workflows.</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-body">
+    <div class="type-meta"><span class="role">Body</span><span>Inter</span><span>17px</span><span>1.6</span><span>0</span><span>450</span></div>
+    <div class="type-spec-body" style="font-size:17px;line-height:1.6;">Alisher Yakubov is a hospitality marketing professional based in the United Arab Emirates. His work spans marketing communications, digital content, photography, and video production.</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-small">
+    <div class="type-meta"><span class="role">Small</span><span>Inter</span><span>14px</span><span>1.5</span><span>0.01em</span><span>450</span></div>
+    <div class="type-spec-body" style="font-size:14px;line-height:1.5;letter-spacing:0.01em;">Marketing communications for upscale hotels and resorts in the UAE.</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-caption">
+    <div class="type-meta"><span class="role">Caption</span><span>Inter</span><span>12px</span><span>1.45</span><span>0.01em</span><span>450</span></div>
+    <div class="type-spec-body" style="font-size:12px;line-height:1.45;letter-spacing:0.01em;color:var(--muted);">By Alisher Yakubov, Hospitality Marketing Professional</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-label">
+    <div class="type-meta"><span class="role">Eyebrow / Label</span><span>Inter</span><span>12px</span><span>1.4</span><span>0.08em</span><span>600</span></div>
+    <div class="type-spec-body" style="font-size:12px;line-height:1.4;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--accent);">Hospitality Marketing &middot; Digital Strategy &middot; Content</div>
+  </div>
+
+  <div class="type-row" data-od-id="type-mono">
+    <div class="type-meta"><span class="role">Mono</span><span>SF Mono</span><span>13px</span><span>—</span><span>0.02em</span><span>500</span></div>
+    <div class="type-spec-mono" style="font-size:13px;letter-spacing:0.02em;color:var(--muted);text-transform:uppercase;">21 May 2026</div>
+  </div>
+
+</div>
+
+</body>
+</html>

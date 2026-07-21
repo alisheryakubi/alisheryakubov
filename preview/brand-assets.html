@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Assets — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .asset-container { max-width: 1000px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .page-header { max-width: 1000px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  h3.section-title { font-size: 18px; margin: 48px 0 16px; }
+  h3.section-title:first-of-type { margin-top: 0; }
+  .asset-meta { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .logo-demo { font-family: var(--font-display); font-size: 32px; font-weight: 600; letter-spacing: -0.02em; color: var(--fg); }
+  .logo-demo span { color: var(--muted); font-weight: 450; }
+  .portrait { width: 100%; max-width: 400px; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); }
+  .og-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 640px) { .og-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 768px) { .og-grid { grid-template-columns: repeat(4, 1fr); } }
+  .og-grid img { width: 100%; aspect-ratio: 1.91/1; object-fit: cover; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+  .gallery-preview { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 639px) { .gallery-preview { grid-template-columns: repeat(2, 1fr); } }
+  .gallery-preview img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: var(--radius-sm); }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link eyebrow" style="margin-bottom:24px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All previews
+  </a>
+  <span class="eyebrow">Assets</span>
+  <h1>Brand Assets</h1>
+  <p>Real assets preserved from the source project — logo, portrait, OG images, and gallery thumbnails.</p>
+</div>
+
+<div class="asset-container">
+
+  <h3 class="section-title">Logo / wordmark</h3>
+  <div class="logo-demo" data-od-id="asset-logo">Alisher<span>Yakubov</span></div>
+  <div class="asset-meta">Source Serif 4 · 20px · 600 weight · -0.02em tracking · "Alisher" in --fg, "Yakubov" in --muted</div>
+
+  <h3 class="section-title">Professional portrait</h3>
+  <img src="../assets/alisher-yakubov.jpg" alt="Alisher Yakubov — professional portrait" class="portrait" data-od-id="asset-portrait">
+  <div class="asset-meta">assets/alisher-yakubov.jpg · 4:5 aspect · used in hero section</div>
+
+  <h3 class="section-title">Open Graph images</h3>
+  <div class="og-grid" data-od-id="asset-og">
+    <img src="../assets/og-home.jpg" alt="OG Home">
+    <img src="../assets/og-about.jpg" alt="OG About">
+    <img src="../assets/og-work.jpg" alt="OG Work">
+    <img src="../assets/og-projects.jpg" alt="OG Projects">
+    <img src="../assets/og-media.jpg" alt="OG Media">
+    <img src="../assets/og-articles.jpg" alt="OG Articles">
+    <img src="../assets/og-gallery.jpg" alt="OG Gallery">
+    <img src="../assets/og-contact.jpg" alt="OG Contact">
+  </div>
+  <div class="asset-meta">8 OG images · 1.91:1 ratio · one per page · 43–48 KB each</div>
+
+  <h3 class="section-title">Gallery thumbnails</h3>
+  <div class="gallery-preview" data-od-id="asset-gallery">
+    <img src="../assets/gallery/event-01.jpg" alt="Event">
+    <img src="../assets/gallery/conference-01.jpg" alt="Conference">
+    <img src="../assets/gallery/networking-01.jpg" alt="Networking">
+    <img src="../assets/gallery/speaking-01.jpg" alt="Speaking">
+    <img src="../assets/gallery/awards-01.jpg" alt="Awards">
+    <img src="../assets/gallery/behind-scenes-01.jpg" alt="Behind the scenes">
+    <img src="../assets/gallery/event-02.jpg" alt="Event 2">
+    <img src="../assets/gallery/conference-02.jpg" alt="Conference 2">
+  </div>
+  <div class="asset-meta">12 gallery images · 1:1 square · event, conference, networking, speaking, awards, behind-the-scenes</div>
+
+</div>
+
+</body>
+</html>

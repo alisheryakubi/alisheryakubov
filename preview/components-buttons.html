@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Components — alisheryakubov.com Design System</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .comp-container { max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  h3.section-title { font-size: 18px; margin: 48px 0 16px; }
+  h3.section-title:first-of-type { margin-top: 0; }
+  .comp-group { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+  .comp-group > * { margin-top: 0; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" class="back-link eyebrow" style="margin-bottom:24px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All previews
+  </a>
+  <span class="eyebrow">Components</span>
+  <h1>Components</h1>
+  <p>Buttons, cards, tags, icon spots, blockquotes, lists, and tables — extracted from the live site.</p>
+</div>
+
+<div class="comp-container">
+
+  <h3 class="section-title">Buttons</h3>
+  <div class="comp-group" data-od-id="comp-buttons">
+    <a href="#" class="button button-primary">Primary button</a>
+    <a href="#" class="button button-secondary">Secondary button</a>
+  </div>
+  <p style="font-size:14px;color:var(--muted);margin-top:16px;">Min-height 44px, padding 12px 24px, font 14px weight 550, radius 8px.</p>
+
+  <h3 class="section-title">Buttons on accent</h3>
+  <div style="background:var(--accent);color:var(--accent-text);padding:32px;border-radius:var(--radius);margin:16px 0;" data-od-id="comp-buttons-cta">
+    <div class="comp-group" style="margin-top:0;">
+      <a href="#" class="button" style="background:var(--accent-text);color:var(--accent);">On-accent primary</a>
+      <a href="#" class="button button-secondary" style="color:var(--accent-text);border-color:rgba(255,255,255,0.3);">On-accent secondary</a>
+    </div>
+  </div>
+
+  <h3 class="section-title">Cards</h3>
+  <div class="card-grid card-grid-2" data-od-id="comp-cards">
+    <div class="card">
+      <h3>Surface card</h3>
+      <p class="small" style="color:var(--muted);margin:0;">--surface background, 1px border, 12px radius, 28px padding.</p>
+    </div>
+    <div class="card-flat">
+      <h3>Flat card</h3>
+      <p class="small" style="color:var(--muted);margin:0;">Transparent background, 1px border, 12px radius, 24px padding.</p>
+    </div>
+  </div>
+
+  <h3 class="section-title">Expertise card</h3>
+  <div class="card-grid card-grid-2 card-grid-3" data-od-id="comp-expertise">
+    <article class="card expertise-card">
+      <div class="icon-spot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg></div>
+      <h3>Luxury Hospitality</h3>
+      <p>Marketing communications for upscale hotels and resorts in the UAE.</p>
+    </article>
+    <article class="card expertise-card">
+      <div class="icon-spot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+      <h3>AI-Assisted Workflows</h3>
+      <p>Using AI tools to support content ideation, drafting, and production.</p>
+    </article>
+  </div>
+
+  <h3 class="section-title">Tags</h3>
+  <div class="comp-group" data-od-id="comp-tags">
+    <span class="tag">Hospitality Marketing</span>
+    <span class="tag">AI &amp; Workflows</span>
+    <span class="tag">SEO &amp; Search</span>
+    <span class="tag">Content Strategy</span>
+    <span class="tag">Active</span>
+    <span class="tag">Research</span>
+  </div>
+
+  <h3 class="section-title">Blockquote</h3>
+  <blockquote class="blockquote" data-od-id="comp-blockquote">
+    "The goal is not to hand the keyboard to a machine. It is to use the machine to produce more raw material so the human team can spend more time on taste, judgment, and guest context."
+  </blockquote>
+
+  <h3 class="section-title">List (unstyled with borders)</h3>
+  <ul class="list-unstyled" data-od-id="comp-list">
+    <li>Supported the planning and execution of integrated marketing campaigns.</li>
+    <li>Managed day-to-day marketing communications and content calendars.</li>
+    <li>Collaborated with cluster properties to align brand messaging.</li>
+  </ul>
+
+  <h3 class="section-title">Table</h3>
+  <table class="table" data-od-id="comp-table">
+    <thead><tr><th>Role</th><th>Organization</th><th>Location</th></tr></thead>
+    <tbody>
+      <tr><td>Cluster Assistant Marketing Communications Manager</td><td>Fujairah Rotana Resort &amp; Spa</td><td>UAE</td></tr>
+      <tr><td>Marketing Support</td><td>Nour Arjaan by Rotana</td><td>UAE</td></tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>

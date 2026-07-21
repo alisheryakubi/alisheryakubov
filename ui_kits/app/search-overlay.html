@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Overlay — UI Kit</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  .page-header { max-width: 900px; margin: 0 auto 40px; padding: 0 clamp(20px, 4vw, 48px); }
+  .page-header h1 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 12px; }
+  .page-header p { color: var(--muted); max-width: 55ch; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 24px; font-size: 14px; font-weight: 550; }
+  .back-link:hover { text-decoration: none; }
+  .demo-section { max-width: 900px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 80px; }
+  .demo-section h3 { font-size: 18px; margin: 40px 0 16px; }
+  .demo-section h3:first-of-type { margin-top: 0; }
+  .search-trigger { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--muted); font-size: 13px; font-family: inherit; cursor: pointer; }
+  .search-trigger:hover { border-color: var(--muted); }
+  .search-trigger kbd { font-family: var(--font-mono); font-size: 11px; padding: 1px 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); }
+  .shortcuts { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0; }
+  .shortcut { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+  .shortcut kbd { font-family: var(--font-mono); font-size: 12px; padding: 2px 8px; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); color: var(--fg); }
+
+  /* Overlay */
+  .search-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); display: none; align-items: flex-start; justify-content: center; padding-top: 12vh; z-index: 1000; }
+  .search-overlay.open { display: flex; }
+  .search-panel { width: 100%; max-width: 560px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-lg); overflow: hidden; }
+  .search-input-row { display: flex; align-items: center; gap: 12px; padding: 20px 24px; border-bottom: 1px solid var(--border); }
+  .search-input-row svg { color: var(--muted); flex-shrink: 0; }
+  .search-input-row input { flex: 1; border: none; outline: none; background: transparent; font-family: inherit; font-size: 17px; color: var(--fg); }
+  .search-input-row input::placeholder { color: var(--muted); }
+  .search-input-row .esc-hint { font-family: var(--font-mono); font-size: 11px; padding: 2px 8px; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); }
+  .search-results { max-height: 50vh; overflow-y: auto; padding: 8px 0; }
+  .search-result { display: block; padding: 12px 24px; text-decoration: none; color: var(--fg); border-left: 3px solid transparent; }
+  .search-result:hover, .search-result.selected { background: var(--surface); border-left-color: var(--accent); text-decoration: none; }
+  .search-result-title { font-size: 15px; font-weight: 500; }
+  .search-result-meta { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .search-empty { padding: 32px 24px; text-align: center; color: var(--muted); font-size: 14px; }
+  .search-footer { display: flex; gap: 16px; padding: 12px 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+  .search-footer span { display: flex; align-items: center; gap: 6px; }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html" class="back-link eyebrow">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    UI Kit
+  </a>
+  <span class="eyebrow">Interaction</span>
+  <h1>Search Overlay</h1>
+  <p>Vanilla JS command-palette style search. Press <kbd style="font-family:var(--font-mono);font-size:12px;padding:2px 6px;border:1px solid var(--border);border-radius:4px;">/</kbd> or <kbd style="font-family:var(--font-mono);font-size:12px;padding:2px 6px;border:1px solid var(--border);border-radius:4px;">Cmd+K</kbd> to open. Esc to close. Arrow keys to navigate.</p>
+</header>
+
+<main class="demo-section">
+  <h3>Trigger</h3>
+  <button class="search-trigger" onclick="openSearch()" data-od-id="search-trigger">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    Search articles, projects…
+    <kbd>⌘K</kbd>
+  </button>
+
+  <h3>Keyboard shortcuts</h3>
+  <div class="shortcuts" data-od-id="search-shortcuts">
+    <div class="shortcut"><kbd>/</kbd> Open search</div>
+    <div class="shortcut"><kbd>⌘K</kbd> Open search</div>
+    <div class="shortcut"><kbd>Esc</kbd> Close search</div>
+    <div class="shortcut"><kbd>↑</kbd> Previous result</div>
+    <div class="shortcut"><kbd>↓</kbd> Next result</div>
+    <div class="shortcut"><kbd>Enter</kbd> Go to result</div>
+  </div>
+</main>
+
+<!-- Search overlay -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()" data-od-id="search-overlay">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Search articles, projects…" autocomplete="off">
+      <span class="esc-hint">ESC</span>
+    </div>
+    <div class="search-results" id="searchResults">
+      <a href="#" class="search-result selected"><div class="search-result-title">AI workflows in hospitality marketing</div><div class="search-result-meta">Article &middot; Jan 2026</div></a>
+      <a href="#" class="search-result"><div class="search-result-title">Building a content calendar</div><div class="search-result-meta">Article &middot; Dec 2025</div></a>
+      <a href="#" class="search-result"><div class="search-result-title">About Alisher Yakubov</div><div class="search-result-meta">Page &middot; About</div></a>
+      <a href="#" class="search-result"><div class="search-result-title">Fujairah Rotana winter campaign</div><div class="search-result-meta">News &middot; Dec 2025</div></a>
+      <a href="#" class="search-result"><div class="search-result-title">Gallery</div><div class="search-result-meta">Page &middot; Gallery</div></a>
+    </div>
+    <div class="search-footer">
+      <span><kbd style="font-family:var(--font-mono);font-size:10px;padding:1px 5px;border:1px solid var(--border);border-radius:3px;">↑↓</kbd> Navigate</span>
+      <span><kbd style="font-family:var(--font-mono);font-size:10px;padding:1px 5px;border:1px solid var(--border);border-radius:3px;">↵</kbd> Open</span>
+      <span><kbd style="font-family:var(--font-mono);font-size:10px;padding:1px 5px;border:1px solid var(--border);border-radius:3px;">esc</kbd> Close</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const pages = [
+  { title: 'AI workflows in hospitality marketing', meta: 'Article · Jan 2026', url: '#' },
+  { title: 'Building a content calendar', meta: 'Article · Dec 2025', url: '#' },
+  { title: 'About Alisher Yakubov', meta: 'Page · About', url: '#' },
+  { title: 'Fujairah Rotana winter campaign', meta: 'News · Dec 2025', url: '#' },
+  { title: 'Gallery', meta: 'Page · Gallery', url: '#' },
+  { title: 'Experience', meta: 'Page · Experience', url: '#' },
+  { title: 'Projects', meta: 'Page · Projects', url: '#' },
+  { title: 'Contact', meta: 'Page · Contact', url: '#' },
+];
+
+let selectedIdx = 0;
+let filtered = pages;
+
+function openSearch() {
+  document.getElementById('searchOverlay').classList.add('open');
+  const input = document.getElementById('searchInput');
+  input.value = '';
+  filtered = pages;
+  selectedIdx = 0;
+  renderResults();
+  setTimeout(() => input.focus(), 50);
+}
+
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('open');
+}
+
+function renderResults() {
+  const container = document.getElementById('searchResults');
+  if (filtered.length === 0) {
+    container.innerHTML = '<div class="search-empty">No results found.</div>';
+    return;
+  }
+  container.innerHTML = filtered.map((p, i) =>
+    '<a href="' + p.url + '" class="search-result' + (i === selectedIdx ? ' selected' : '') + '">' +
+    '<div class="search-result-title">' + p.title + '</div>' +
+    '<div class="search-result-meta">' + p.meta + '</div></a>'
+  ).join('');
+}
+
+function filterResults(query) {
+  const q = query.toLowerCase();
+  filtered = q ? pages.filter(p => p.title.toLowerCase().includes(q) || p.meta.toLowerCase().includes(q)) : pages;
+  selectedIdx = 0;
+  renderResults();
+}
+
+document.getElementById('searchInput').addEventListener('input', function(e) {
+  filterResults(this.value);
+});
+
+document.addEventListener('keydown', function(e) {
+  const overlay = document.getElementById('searchOverlay');
+  if (!overlay.classList.contains('open')) {
+    if (e.key === '/' || (e.key === 'k' && (e.metaKey || e.ctrlKey))) {
+      e.preventDefault();
+      openSearch();
+    }
+    return;
+  }
+  if (e.key === 'Escape') { e.preventDefault(); closeSearch(); }
+  if (e.key === 'ArrowDown') { e.preventDefault(); if (selectedIdx < filtered.length - 1) { selectedIdx++; renderResults(); } }
+  if (e.key === 'ArrowUp') { e.preventDefault(); if (selectedIdx > 0) { selectedIdx--; renderResults(); } }
+  if (e.key === 'Enter') { e.preventDefault(); if (filtered[selectedIdx]) window.location.href = filtered[selectedIdx].url; }
+});
+</script>
+
+</body>
+</html>
