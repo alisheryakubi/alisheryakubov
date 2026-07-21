@@ -247,6 +247,10 @@
     }
   </style>
   <script>(function(){try{var t=null;try{t=localStorage.getItem("ay-theme");}catch(e){}if(!t){var m=document.cookie.match(/(?:^|; )ay-theme=(dark|light)/);if(m)t=m[1];}if(!t){if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)t="dark";else t="light";}document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script>
+  <script type="module">
+    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1/dist/index.mjs';
+    injectSpeedInsights();
+  </script>
 </head>
 <body>
 
