@@ -14,7 +14,7 @@ This archive is the source of truth for turning the design into production code.
 - HTML screens detected: 58
 - Stylesheets detected: 2
 - Script/component files detected: 4
-- Supporting assets detected: 93
+- Supporting assets detected: 99
 
 ## Responsive contract
 Validate the implementation across this 2025–2026 viewport matrix:
@@ -134,6 +134,7 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 
 ## Assets and supporting files
 - `assets/alisher-yakubov.jpg`
+- `assets/apple-touch-icon.png`
 - `assets/articles/agentic-commerce.jpg`
 - `assets/articles/ai-agents-one-person-business.jpg`
 - `assets/articles/ai-automation-what-worked.jpg`
@@ -206,6 +207,10 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `assets/book-preview/page-45.jpg`
 - `assets/book-preview/page-46.jpg`
 - `assets/book-preview/page-47.jpg`
+- `assets/favicon-192x192.png`
+- `assets/favicon-48x48.png`
+- `assets/favicon-512x512.png`
+- `assets/favicon-96x96.png`
 - `assets/favicon.svg`
 - `assets/insights/search-is-not-dead.jpg`
 - `assets/og-about.jpg`
@@ -219,6 +224,7 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `context/provenance.md`
 - `context/source-context.md`
 - `DESIGN.md`
+- `favicon.ico`
 - `README.md`
 - `robots.txt`
 - `search-index.json`
