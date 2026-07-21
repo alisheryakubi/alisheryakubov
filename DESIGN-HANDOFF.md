@@ -11,7 +11,7 @@ This archive is the source of truth for turning the design into production code.
 
 ## Source map
 - Primary entry: `index.html`
-- HTML screens detected: 58
+- HTML screens detected: 67
 - Stylesheets detected: 2
 - Script/component files detected: 4
 - Supporting assets detected: 99
@@ -106,6 +106,15 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `preview/typography-specimens.html`
 - `preview/typography.html`
 - `projects.html`
+- `services.html`
+- `services/ai-chatbot-setup.html`
+- `services/custom-coloring-books.html`
+- `services/graphic-design.html`
+- `services/instagram-visibility.html`
+- `services/meta-advertising.html`
+- `services/real-estate-lead-qualification.html`
+- `services/social-media-management.html`
+- `services/website-creation.html`
 - `ui_kits/app/blog-card.html`
 - `ui_kits/app/buttons.html`
 - `ui_kits/app/card-grid.html`

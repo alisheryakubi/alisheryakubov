@@ -64,26 +64,32 @@
     var items = document.querySelectorAll(".nav-item.has-submenu");
     items.forEach(function (item) {
       var trigger = item.querySelector(".nav-trigger");
-      if (!trigger || trigger.dataset.ddBound) return;
-      trigger.dataset.ddBound = "1";
+      var chevron = item.querySelector(".nav-chevron");
+      var toggleEl = chevron || trigger;
+      if (!toggleEl || toggleEl.dataset.ddBound) return;
+      toggleEl.dataset.ddBound = "1";
 
-      trigger.addEventListener("click", function (e) {
+      toggleEl.addEventListener("click", function (e) {
         e.preventDefault();
+        e.stopPropagation();
         // Close other open dropdowns (desktop)
         items.forEach(function (other) {
           if (other !== item) other.classList.remove("open");
         });
         item.classList.toggle("open");
+        var open = item.classList.contains("open");
+        if (trigger) trigger.setAttribute("aria-expanded", open ? "true" : "false");
+        if (chevron) chevron.setAttribute("aria-expanded", open ? "true" : "false");
       });
 
       // Keyboard support
-      trigger.addEventListener("keydown", function (e) {
+      toggleEl.addEventListener("keydown", function (e) {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           item.classList.toggle("open");
         } else if (e.key === "Escape") {
           item.classList.remove("open");
-          trigger.focus();
+          toggleEl.focus();
         }
       });
     });

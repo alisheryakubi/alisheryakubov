@@ -146,6 +146,15 @@
       "robots.txt",
       "search-index.json",
       "search.js",
+      "services.html",
+      "services/ai-chatbot-setup.html",
+      "services/custom-coloring-books.html",
+      "services/graphic-design.html",
+      "services/instagram-visibility.html",
+      "services/meta-advertising.html",
+      "services/real-estate-lead-qualification.html",
+      "services/social-media-management.html",
+      "services/website-creation.html",
       "sitemap.xml",
       "SKILL.md",
       "styles.css",
@@ -212,6 +221,15 @@
       "preview/typography-specimens.html",
       "preview/typography.html",
       "projects.html",
+      "services.html",
+      "services/ai-chatbot-setup.html",
+      "services/custom-coloring-books.html",
+      "services/graphic-design.html",
+      "services/instagram-visibility.html",
+      "services/meta-advertising.html",
+      "services/real-estate-lead-qualification.html",
+      "services/social-media-management.html",
+      "services/website-creation.html",
       "ui_kits/app/blog-card.html",
       "ui_kits/app/buttons.html",
       "ui_kits/app/card-grid.html",
@@ -553,6 +571,51 @@
     },
     {
       "file": "projects.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/ai-chatbot-setup.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/custom-coloring-books.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/graphic-design.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/instagram-visibility.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/meta-advertising.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/real-estate-lead-qualification.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/social-media-management.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "services/website-creation.html",
       "role": "screen",
       "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
     },

@@ -31,11 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alisheryakubov.com/book-preview</loc>
-    <lastmod>2026-07-21</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://alisheryakubov.com/news</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
@@ -141,27 +136,47 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alisheryakubov.com/ai-powered-marketing</loc>
+    <loc>https://alisheryakubov.com/services</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alisheryakubov.com/services/custom-coloring-books</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alisheryakubov.com/video-content</loc>
+    <loc>https://alisheryakubov.com/services/meta-advertising</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alisheryakubov.com/hospitality-campaigns</loc>
+    <loc>https://alisheryakubov.com/services/real-estate-lead-qualification</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alisheryakubov.com/photography-for-brands</loc>
+    <loc>https://alisheryakubov.com/services/ai-chatbot-setup</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alisheryakubov.com/custom-books</loc>
+    <loc>https://alisheryakubov.com/services/website-creation</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alisheryakubov.com/services/instagram-visibility</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alisheryakubov.com/services/graphic-design</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alisheryakubov.com/services/social-media-management</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
   </url>

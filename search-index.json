@@ -7,6 +7,13 @@
     "keywords": "home, alisher yakubov, hospitality marketing, digital creator, uae, rotana, fujairah rotana, nour arjaan"
   },
   {
+    "title": "Services — Alisher Yakubov",
+    "description": "Creative and digital services for businesses, brands and professionals — custom coloring books, Meta advertising, real estate lead qualification, AI chatbots, websites, Instagram visibility, graphic design, and social media management.",
+    "url": "/services",
+    "category": "Page",
+    "keywords": "services, creative services, digital services, marketing, advertising, web design, chatbot, instagram, graphic design, social media, alisher yakubov, uae"
+  },
+  {
     "title": "About — Alisher Yakubov",
     "description": "Full biography: early career, marketing journey, AI journey, hospitality philosophy, digital transformation, professional values, skills, languages, and interests.",
     "url": "/about",
@@ -21,11 +28,11 @@
     "keywords": "experience, work, employment, fujairah rotana resort, nour arjaan, rotana, cluster assistant marketing communications manager, campaigns, responsibilities, achievements"
   },
   {
-    "title": "Services — Alisher Yakubov",
-    "description": "Services overview: AI-powered marketing, video content, hospitality campaigns, photography for brands, and custom books.",
+    "title": "Portfolio — Alisher Yakubov",
+    "description": "Selected work across hospitality marketing, AI workflows, websites, custom books, brand content, and real estate lead systems.",
     "url": "/projects",
     "category": "Page",
-    "keywords": "services, ai-powered marketing, video content, hospitality campaigns, photography for brands, custom books, projects"
+    "keywords": "portfolio, selected work, hospitality marketing, ai workflows, websites, custom books, brand content, real estate"
   },
   {
     "title": "Books — Alisher Yakubov",
@@ -206,38 +213,59 @@
     "keywords": "ai workflows, hospitality marketing, ai ideation, drafting, image generation, video, approval workflows, disclosure, hotel marketing"
   },
   {
-    "title": "AI-Powered Marketing — Alisher Yakubov",
-    "description": "AI-assisted marketing workflows for hospitality and brands: ideation, drafting, visuals, editing, and distribution without replacing creative control.",
-    "url": "/ai-powered-marketing",
+    "title": "Custom Coloring Books — Alisher Yakubov",
+    "description": "Bespoke coloring books designed and published end-to-end for brands, schools, and creators — illustration, layout, print-ready files, and digital flipbook previews.",
+    "url": "/services/custom-coloring-books",
     "category": "Service",
-    "keywords": "ai marketing, ai-powered marketing, ai workflows, content ideation, ai-assisted, hospitality marketing ai, automation"
+    "keywords": "custom coloring books, coloring book, children's books, self publishing, illustration, flipbook, print-ready, illustrated book, book publishing"
   },
   {
-    "title": "Video Content — Alisher Yakubov",
-    "description": "Video content and storytelling for hospitality and brands: explainers, case studies, behind-the-scenes, and short-form social video.",
-    "url": "/video-content",
+    "title": "Meta Advertising — Alisher Yakubov",
+    "description": "Facebook and Instagram ad campaigns — setup, audience targeting, creative testing, and optimization for hospitality, real estate, and local brands.",
+    "url": "/services/meta-advertising",
     "category": "Service",
-    "keywords": "video content, video production, hospitality video, youtube, short-form video, explainer, behind the scenes, case study video"
+    "keywords": "meta advertising, facebook ads, instagram ads, paid social, ad campaigns, audience targeting, creative testing, hospitality ads, real estate ads"
   },
   {
-    "title": "Hospitality Campaigns — Alisher Yakubov",
-    "description": "Integrated campaigns for luxury hotels and resorts: audience, message, content, channel, timing, and measurement around one strong concept.",
-    "url": "/hospitality-campaigns",
+    "title": "Real Estate Lead Qualification — Alisher Yakubov",
+    "description": "Lead qualification systems for real estate — filter inbound leads, score intent, and route ready buyers to the right agent.",
+    "url": "/services/real-estate-lead-qualification",
     "category": "Service",
-    "keywords": "hospitality campaigns, hotel campaigns, resort marketing, luxury hotel marketing, integrated campaigns, rotana, fujairah rotana"
+    "keywords": "real estate lead qualification, lead scoring, real estate leads, agent routing, ai assistant, crm integration, intent scoring"
   },
   {
-    "title": "Photography for Brands — Alisher Yakubov",
-    "description": "Professional photography for properties, events, food, interiors, and portraits — planned with marketing objectives in mind.",
-    "url": "/photography-for-brands",
+    "title": "AI Chatbot Setup — Alisher Yakubov",
+    "description": "AI chatbots for website and WhatsApp — trained on your business, answers common questions, qualifies leads, and hands off to a human when needed.",
+    "url": "/services/ai-chatbot-setup",
     "category": "Service",
-    "keywords": "photography, brand photography, hotel photography, event photography, food photography, interior photography, portrait, product photography"
+    "keywords": "ai chatbot, website chatbot, whatsapp assistant, ai assistant, lead capture, human handoff, english russian chatbot"
   },
   {
-    "title": "Custom Books — Alisher Yakubov",
-    "description": "Independently published children's books with interactive flipbook previews — content development, production, publishing, and marketing.",
-    "url": "/custom-books",
+    "title": "Website Creation — Alisher Yakubov",
+    "description": "Fast, affordable websites for brands, hospitality, and small businesses — clean design, mobile-first, SEO-ready, and editable without a developer.",
+    "url": "/services/website-creation",
     "category": "Service",
-    "keywords": "custom books, children's books, self publishing, flipbook, illustrated book, book publishing, author services"
+    "keywords": "website creation, affordable websites, fast websites, mobile-first, seo-ready, editable, small business websites, hospitality websites"
+  },
+  {
+    "title": "Instagram Visibility — Alisher Yakubov",
+    "description": "Instagram visibility for brands and creators — content systems, hashtag and search strategy, Reels planning, and profile optimization for real reach.",
+    "url": "/services/instagram-visibility",
+    "category": "Service",
+    "keywords": "instagram visibility, instagram growth, reels planning, hashtag strategy, instagram search, profile optimization, content system, organic reach"
+  },
+  {
+    "title": "Graphic Design — Alisher Yakubov",
+    "description": "Graphic design for brands — logos, social media assets, print materials, menus, and presentation templates delivered fast and on-brand.",
+    "url": "/services/graphic-design",
+    "category": "Service",
+    "keywords": "graphic design, logo design, social media templates, print materials, menus, flyers, brochures, presentation templates, brand design"
+  },
+  {
+    "title": "Social Media Management — Alisher Yakubov",
+    "description": "Social media management for brands and hospitality — content planning, scheduling, community management, and monthly reporting across Instagram, Facebook, and LinkedIn.",
+    "url": "/services/social-media-management",
+    "category": "Service",
+    "keywords": "social media management, content planning, scheduling, community management, instagram, facebook, linkedin, monthly reporting, hospitality social media"
   }
 ]

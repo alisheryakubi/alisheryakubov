@@ -451,6 +451,62 @@ p {
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
+/* ---------- Split nav item (link + chevron) ---------- */
+.nav-item.has-split {
+  gap: 0;
+}
+.nav-item.has-split > .nav-link {
+  padding-right: 2px;
+}
+.nav-item.has-split > .nav-chevron {
+  padding: 8px 6px 8px 2px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-item.has-split > .nav-chevron .chevron {
+  width: 10px;
+  height: 10px;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+}
+.nav-item.has-split.open > .nav-chevron .chevron {
+  transform: rotate(180deg);
+}
+.nav-item.has-split > .nav-chevron:hover,
+.nav-item.has-split.open > .nav-chevron {
+  background: var(--surface);
+  color: var(--fg);
+}
+.nav-item.has-split > .nav-link.active,
+.nav-item.has-split > .nav-link[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
+}
+
+/* ---------- Desktop hover-open (pointer: fine) ---------- */
+@media (min-width: 768px) and (pointer: fine) {
+  .nav-item.has-submenu:hover > .nav-submenu,
+  .nav-item.has-submenu:focus-within > .nav-submenu {
+    display: flex;
+  }
+  .nav-item.has-submenu:hover > .nav-trigger .chevron,
+  .nav-item.has-submenu:focus-within > .nav-trigger .chevron {
+    transform: rotate(180deg);
+  }
+}
+
 /* ---------- Mobile dropdown behaviour ---------- */
 @media (max-width: 767px) {
   .nav-item {
@@ -458,11 +514,24 @@ p {
     align-items: stretch;
   }
   .nav-item > a,
-  .nav-item > .nav-trigger {
+  .nav-item > .nav-trigger,
+  .nav-item.has-split > .nav-link,
+  .nav-item.has-split > .nav-chevron {
     padding: 12px clamp(20px, 4vw, 48px);
     border-radius: 0;
     width: 100%;
     justify-content: flex-start;
+  }
+  .nav-item.has-split {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .nav-item.has-split > .nav-link {
+    flex: 1;
+  }
+  .nav-item.has-split > .nav-chevron {
+    width: 48px;
+    justify-content: center;
   }
   .nav-submenu {
     position: static;
@@ -1109,4 +1178,61 @@ p {
 /* Theme transition — smooth but not jarring */
 :root {
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ---------- FAQ accordion (service pages) ---------- */
+.faq-accordion {
+  max-width: 780px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: background 0.15s ease;
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+.faq-item > summary:hover { background: var(--surface-hover, var(--surface)); }
+.faq-item[open] > summary { color: var(--accent); }
+.faq-item > summary .faq-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.faq-item > summary .faq-icon::before,
+.faq-item > summary .faq-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 1.6px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+.faq-item > summary .faq-icon::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq-item[open] > summary .faq-icon::after { transform: translate(-50%, -50%) rotate(0deg); }
+.faq-item .faq-answer {
+  padding: 0 16px 14px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
 }
